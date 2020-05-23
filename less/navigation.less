@@ -1,0 +1,20 @@
+header {
+    .flex(row, space-around, center);
+    background-color: @header-bg;
+    color: @h-color;
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    nav {
+        width: 25%;
+        .flex(row, space-evenly, center);
+        padding: 2rem 0;
+
+        a {
+            color: @h-color;
+            margin: 0 1rem;
+        }
+    }
+}
