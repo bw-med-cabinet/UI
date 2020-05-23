@@ -1,0 +1,18 @@
+section#info {
+    color: @main-font-color;
+    .flex(column, center, center);
+
+    h2 {
+        color: @main-font-color;
+    }
+
+    .card-container {
+        width: 90%;
+        .flex(row, space-evenly, center);
+
+        .card {
+            .flex(column, flex-start, center);
+            width: 40%;
+        }
+    }
+}

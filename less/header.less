@@ -4,7 +4,11 @@ header {
     color: @h-color;
 
     h2 {
-        font-size: 3rem;
+        font-size: 5rem;
+
+        a {
+            color: @h-color;
+        }
     }
 
     nav {
@@ -15,6 +19,14 @@ header {
         a {
             color: @h-color;
             margin: 0 1rem;
+            color: darken(@white, 10%);
+            padding: 1.5rem 0;
+            font-size: 2.5rem;
+
+            &:hover {
+                color: @h-color;
+                .animate-up(-0.5rem, 0.5s);
+            }
         }
     }
 }
