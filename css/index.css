@@ -152,6 +152,7 @@ section.cta .cta-container {
 }
 section.cta .cta-container h1 {
   font-size: 5rem;
+  color: #050404;
 }
 section.cta .cta-container .btn-container {
   width: 100%;
@@ -159,4 +160,17 @@ section.cta .cta-container .btn-container {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+section.cta .cta-container .btn-container button {
+  margin: 1rem 2rem;
+  width: 25%;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  background-color: #C5D86D;
+  color: #050404;
+}
+section.cta .cta-container .btn-container button:hover {
+  background-color: #90A959;
 }

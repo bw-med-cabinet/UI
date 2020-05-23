@@ -11,11 +11,20 @@ section.cta{
 
         h1 {
             font-size: 5rem;
+            color: @main-font-color;
         }
 
         .btn-container {
             width: 100%;
             .flex(row, center, center);
+
+            button {
+                .custom-btn(25%, 3rem);
+
+                &:hover {
+                    background-color: @button-bg-hover;
+                }
+            }
         }
     }
 }
