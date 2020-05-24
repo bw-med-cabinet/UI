@@ -153,6 +153,11 @@ header nav a:hover {
   transform: translateY(-0.5rem);
   transition: transform 0.5s;
 }
+@media (max-width: 1310px) {
+  header nav {
+    width: 50%;
+  }
+}
 section.cta {
   background-image: url(../images/hero-large.jpg);
   background-repeat: no-repeat;
@@ -170,6 +175,16 @@ section.cta .cta-container {
 section.cta .cta-container h1 {
   font-size: 7rem;
   color: #050404;
+}
+@media (max-width: 1270px) {
+  section.cta .cta-container h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 800px) {
+  section.cta .cta-container h1 {
+    font-size: 4rem;
+  }
 }
 section.cta .cta-container .btn-container {
   width: 100%;
@@ -192,6 +207,26 @@ section.cta .cta-container .btn-container .btn {
 }
 section.cta .cta-container .btn-container .btn:hover {
   background-color: #90A959;
+}
+@media (max-width: 800px) {
+  section.cta .cta-container .btn-container .btn {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1550px) {
+  section.cta .cta-container {
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  section.cta .cta-container {
+    width: 75%;
+  }
+}
+@media (max-width: 800px) {
+  section.cta {
+    height: 50vh;
+  }
 }
 section#mission {
   display: flex;
@@ -250,6 +285,17 @@ section#info .card-container .card {
   margin: 3rem 0;
   padding: 2rem;
   border: 4px dashed #90A959;
+}
+@media (max-width: 800px) {
+  section#info .card-container .card {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  section#info .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 footer {
   display: flex;
