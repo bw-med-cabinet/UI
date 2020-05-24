@@ -11,7 +11,7 @@ section.cta{
 
         h1 {
             font-size: 7rem;
-            color: @main-font-color;
+            color: @cta-color;
 
             @media (max-width: 1270px){
                 font-size: 5rem;
@@ -33,8 +33,14 @@ section.cta{
             .btn {
                 .custom-btn(25%, 3rem);
 
+                a {
+                    &:hover {
+                        color: @border-color;
+                    }
+                }
+
                 &:hover {
-                    background-color: @button-bg-hover;
+                    border-color: @main-font-color;
                 }
 
                 @media @tablet {

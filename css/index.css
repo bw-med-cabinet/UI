@@ -206,7 +206,7 @@ section.cta .cta-container {
 }
 section.cta .cta-container h1 {
   font-size: 7rem;
-  color: #34CC5C;
+  color: #050404;
 }
 @media (max-width: 1270px) {
   section.cta .cta-container h1 {
@@ -237,13 +237,16 @@ section.cta .cta-container .btn-container .btn {
   font-size: 3rem;
   padding: 1rem 0;
   border-radius: 1rem;
-  background-color: #C5D86D;
+  background-color: #ECFFF1;
   color: #34CC5C;
   border: 2px solid #29E05B;
   text-align: center;
 }
+section.cta .cta-container .btn-container .btn a:hover {
+  color: #29E05B;
+}
 section.cta .cta-container .btn-container .btn:hover {
-  background-color: #90A959;
+  border-color: #34CC5C;
 }
 @media (max-width: 800px) {
   section.cta .cta-container .btn-container .btn {
@@ -321,6 +324,7 @@ section#mission .text-container {
   align-items: center;
   border: 4px dashed #29E05B;
   margin: 2rem;
+  background-color: #FFFBFE;
 }
 section#mission .text-container p {
   letter-spacing: 0.1rem;
@@ -369,6 +373,7 @@ section#info .card-container .card {
   margin: 3rem 0;
   padding: 2rem;
   border: 4px dashed #29E05B;
+  background-color: #FFFBFE;
 }
 @media (max-width: 800px) {
   section#info .card-container .card {
