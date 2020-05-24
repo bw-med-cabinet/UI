@@ -27,10 +27,24 @@ header {
                 color: @h-color;
                 .animate-up(-0.5rem, 0.5s);
             }
+
+            @media @mobile {
+                padding: 1rem;
+            }
         }
 
         @media (max-width: 1310px){
             width: 50%;
         }
+
+        @media @mobile {
+            flex-direction: column;
+            padding: 0;
+            padding-bottom: 1rem;
+        }
+    }
+
+    @media @mobile {
+        flex-direction: column;
     }
 }

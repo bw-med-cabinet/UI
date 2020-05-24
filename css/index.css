@@ -153,9 +153,26 @@ header nav a:hover {
   transform: translateY(-0.5rem);
   transition: transform 0.5s;
 }
+@media (max-width: 500px) {
+  header nav a {
+    padding: 1rem;
+  }
+}
 @media (max-width: 1310px) {
   header nav {
     width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
   }
 }
 section.cta {
@@ -211,6 +228,24 @@ section.cta .cta-container .btn-container .btn:hover {
 @media (max-width: 800px) {
   section.cta .cta-container .btn-container .btn {
     font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 500px) {
+  section.cta .cta-container .btn-container .btn {
+    width: 40%;
+    margin: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  section.cta .cta-container .btn-container {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 500px) {
+  section.cta .cta-container .btn-container {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 @media (max-width: 1550px) {
@@ -221,11 +256,24 @@ section.cta .cta-container .btn-container .btn:hover {
 @media (max-width: 800px) {
   section.cta .cta-container {
     width: 75%;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  section.cta .cta-container {
+    justify-content: space-evenly;
   }
 }
 @media (max-width: 800px) {
   section.cta {
     height: 50vh;
+    background-size: cover;
+  }
+}
+@media (max-width: 500px) {
+  section.cta {
+    background-size: cover;
   }
 }
 section#mission {
@@ -239,6 +287,11 @@ section#mission h2 {
   font-size: 3rem;
   margin: 1rem 0;
   margin-top: 3rem;
+}
+@media (max-width: 500px) {
+  section#mission h2 {
+    text-align: center;
+  }
 }
 section#mission .text-container {
   width: 60%;
@@ -264,6 +317,12 @@ section#info {
 section#info p {
   letter-spacing: 0.05rem;
   line-height: 1.5;
+}
+@media (max-width: 500px) {
+  section#info p {
+    text-align: center;
+    margin: 1.4rem 0;
+  }
 }
 section#info h2 {
   color: #050404;
@@ -297,6 +356,12 @@ section#info .card-container .card {
     align-items: center;
   }
 }
+@media (max-width: 500px) {
+  section#info {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 footer {
   display: flex;
   flex-direction: row;
@@ -311,4 +376,14 @@ footer a {
 }
 footer h2 {
   font-size: 3rem;
+}
+@media (max-width: 500px) {
+  footer h2 {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    flex-direction: column;
+  }
 }
