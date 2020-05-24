@@ -37,11 +37,20 @@ header {
             width: 50%;
         }
 
+        @media (max-width: 670px) {
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
         @media @mobile {
             flex-direction: column;
             padding: 0;
             padding-bottom: 1rem;
         }
+    }
+
+    @media (max-width: 670px) {
+        flex-direction: column;
     }
 
     @media @mobile {

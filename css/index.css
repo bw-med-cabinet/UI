@@ -163,11 +163,22 @@ header nav a:hover {
     width: 50%;
   }
 }
+@media (max-width: 670px) {
+  header nav {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
 @media (max-width: 500px) {
   header nav {
     flex-direction: column;
     padding: 0;
     padding-bottom: 1rem;
+  }
+}
+@media (max-width: 670px) {
+  header {
+    flex-direction: column;
   }
 }
 @media (max-width: 500px) {
@@ -203,6 +214,11 @@ section.cta .cta-container h1 {
     font-size: 4rem;
   }
 }
+@media (max-width: 370px) {
+  section.cta .cta-container h1 {
+    font-size: 3rem;
+  }
+}
 section.cta .cta-container .btn-container {
   width: 100%;
   display: flex;
@@ -233,7 +249,7 @@ section.cta .cta-container .btn-container .btn:hover {
 }
 @media (max-width: 500px) {
   section.cta .cta-container .btn-container .btn {
-    width: 40%;
+    width: 50%;
     margin: 2rem;
   }
 }
@@ -267,7 +283,7 @@ section.cta .cta-container .btn-container .btn:hover {
 }
 @media (max-width: 800px) {
   section.cta {
-    height: 50vh;
+    height: 500px;
     background-size: cover;
   }
 }
@@ -306,6 +322,11 @@ section#mission .text-container p {
   letter-spacing: 0.1rem;
   margin: 1rem 0;
   padding: 0 2rem;
+}
+@media (max-width: 500px) {
+  section#mission .text-container {
+    width: 90%;
+  }
 }
 section#info {
   color: #050404;
