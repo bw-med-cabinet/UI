@@ -3,11 +3,12 @@ header {
     background-color: @header-bg;
     color: @h-color;
 
-    h2 {
-        font-size: 5rem;
+    a.logo {
+        width: 40%;
+        max-width: 500px;
 
-        a {
-            color: @h-color;
+        @media (max-width: 670px) {
+            width: 80%;
         }
     }
 
@@ -17,14 +18,14 @@ header {
         padding: 2rem 0;
 
         a {
-            color: @h-color;
+            color: @main-font-color;
             margin: 0 1rem;
-            color: darken(@white, 10%);
+            //color: darken(@white, 10%);
             padding: 1.5rem 0;
             font-size: 2.5rem;
 
             &:hover {
-                color: @h-color;
+                //color: @h-color;
                 .animate-up(-0.5rem, 0.5s);
             }
 

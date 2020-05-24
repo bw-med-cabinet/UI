@@ -92,10 +92,13 @@ video {
 html {
   font-size: 62.5%;
   font-family: 'Lato', sans-serif;
-  color: #050404;
+  color: #34CC5C;
 }
 body {
   font-size: 2rem;
+  background-color: #ECFFF1;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 img {
   max-width: 100%;
@@ -111,7 +114,7 @@ h5 {
 }
 a {
   text-decoration: none;
-  color: #050404;
+  color: #34CC5C;
 }
 p {
   line-height: 1.5;
@@ -124,14 +127,17 @@ header {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #90A959;
+  background-color: #FFFBFE;
   color: #FFFBFE;
 }
-header h2 {
-  font-size: 5rem;
+header a.logo {
+  width: 40%;
+  max-width: 500px;
 }
-header h2 a {
-  color: #FFFBFE;
+@media (max-width: 670px) {
+  header a.logo {
+    width: 80%;
+  }
 }
 header nav {
   width: 25%;
@@ -142,14 +148,12 @@ header nav {
   padding: 2rem 0;
 }
 header nav a {
-  color: #FFFBFE;
+  color: #34CC5C;
   margin: 0 1rem;
-  color: #e6e6e6;
   padding: 1.5rem 0;
   font-size: 2.5rem;
 }
 header nav a:hover {
-  color: #FFFBFE;
   transform: translateY(-0.5rem);
   transition: transform 0.5s;
 }
@@ -202,7 +206,7 @@ section.cta .cta-container {
 }
 section.cta .cta-container h1 {
   font-size: 7rem;
-  color: #050404;
+  color: #34CC5C;
 }
 @media (max-width: 1270px) {
   section.cta .cta-container h1 {
@@ -234,8 +238,8 @@ section.cta .cta-container .btn-container .btn {
   padding: 1rem 0;
   border-radius: 1rem;
   background-color: #C5D86D;
-  color: #050404;
-  border: 2px solid #90A959;
+  color: #34CC5C;
+  border: 2px solid #29E05B;
   text-align: center;
 }
 section.cta .cta-container .btn-container .btn:hover {
@@ -299,7 +303,7 @@ section#mission {
   align-items: center;
 }
 section#mission h2 {
-  color: #050404;
+  color: #34CC5C;
   font-size: 3rem;
   margin: 1rem 0;
   margin-top: 3rem;
@@ -315,7 +319,7 @@ section#mission .text-container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 4px dashed #90A959;
+  border: 4px dashed #29E05B;
   margin: 2rem;
 }
 section#mission .text-container p {
@@ -329,7 +333,7 @@ section#mission .text-container p {
   }
 }
 section#info {
-  color: #050404;
+  color: #34CC5C;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -346,7 +350,7 @@ section#info p {
   }
 }
 section#info h2 {
-  color: #050404;
+  color: #34CC5C;
   font-size: 3rem;
 }
 section#info .card-container {
@@ -364,7 +368,7 @@ section#info .card-container .card {
   width: 40%;
   margin: 3rem 0;
   padding: 2rem;
-  border: 4px dashed #90A959;
+  border: 4px dashed #29E05B;
 }
 @media (max-width: 800px) {
   section#info .card-container .card {
@@ -388,20 +392,25 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #90A959;
+  background-color: #FFFBFE;
   padding: 3rem;
 }
-footer a {
-  color: #FFFBFE;
-  margin: 2rem;
+footer a.logo {
+  width: 10%;
 }
-footer h2 {
-  font-size: 3rem;
+@media (max-width: 800px) {
+  footer a.logo {
+    width: 20%;
+  }
 }
 @media (max-width: 500px) {
-  footer h2 {
-    margin-bottom: 2rem;
+  footer a.logo {
+    width: 40%;
   }
+}
+footer a {
+  color: #34CC5C;
+  margin: 1rem;
 }
 @media (max-width: 500px) {
   footer {
