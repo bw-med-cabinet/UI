@@ -1,0 +1,42 @@
+section.contact-form {
+    .flex(row, center, center);
+    
+    .form-container {
+        background-color: @header-bg;
+        .flex(column, center, center);
+        margin: 4% 30%;
+        padding: 2% 10%;
+        border: 1px solid @main-font-color;
+        border-radius: 10px;
+        color: @main-font-color;
+        box-shadow: 0 1px 2px 0 @border-color;
+
+        h1 {
+            color: @main-font-color;
+            font-size: 3rem;
+            .bold();
+            font-family: @main-font;
+        }
+
+        form {
+            .flex(column, center, center);
+            margin: 3rem;
+
+            label {
+                margin-bottom: 1rem;
+            }
+
+            input[type=submit] {
+                background-color: @main-font-color;
+                color: @header-bg;
+                border: none;
+                border-radius: 3px;
+                padding: 0.5rem 1rem;
+            }
+
+            input, textarea {
+                outline: @main-font-color auto 1px;
+            }
+        }
+    }
+}
