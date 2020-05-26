@@ -1,0 +1,60 @@
+header {
+    .flex(row, space-around, center);
+    background-color: @header-bg;
+    color: @h-color;
+
+    a.logo {
+        width: 40%;
+        max-width: 500px;
+
+        @media (max-width: 670px) {
+            width: 80%;
+        }
+    }
+
+    nav {
+        width: 25%;
+        .flex(row, space-evenly, center);
+        padding: 2rem 0;
+
+        a {
+            color: @main-font-color;
+            margin: 0 1rem;
+            //color: darken(@white, 10%);
+            padding: 1.5rem 0;
+            font-size: 2.5rem;
+
+            &:hover {
+                //color: @h-color;
+                .animate-up(-0.5rem, 0.5s);
+            }
+
+            @media @mobile {
+                padding: 1rem;
+            }
+        }
+
+        @media (max-width: 1310px){
+            width: 50%;
+        }
+
+        @media (max-width: 670px) {
+            width: 100%;
+            justify-content: space-evenly;
+        }
+
+        @media @mobile {
+            flex-direction: column;
+            padding: 0;
+            padding-bottom: 1rem;
+        }
+    }
+
+    @media (max-width: 670px) {
+        flex-direction: column;
+    }
+
+    @media @mobile {
+        flex-direction: column;
+    }
+}
