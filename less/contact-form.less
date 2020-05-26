@@ -4,18 +4,19 @@ section.contact-form {
     .form-container {
         background-color: @header-bg;
         .flex(column, center, center);
-        margin: 4% 30%;
-        padding: 2% 10%;
+        margin: 4% auto;
         border: 1px solid @main-font-color;
         border-radius: 10px;
         color: @main-font-color;
         box-shadow: 0 1px 2px 0 @border-color;
+        width: 40%;
 
         h1 {
             color: @main-font-color;
             font-size: 3rem;
             .bold();
             font-family: @main-font;
+            margin-top: 1rem;
         }
 
         form {
@@ -37,6 +38,30 @@ section.contact-form {
             input, textarea {
                 outline: @main-font-color auto 1px;
             }
+
+            textarea {
+                font-size: 2rem;
+                font-family: @main-font;
+                overflow: auto;
+                resize: none;
+                width: 150%;
+
+                @media @tablet {
+                    width: 150%;
+                }
+
+                @media @mobile {
+                    width: 120%;
+                }
+            }
+        }
+
+        @media (max-width: 1300px) {
+            width: 60%;
+        }
+
+        @media @tablet {
+            width: 85%;
         }
     }
 }
