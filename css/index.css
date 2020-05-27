@@ -162,6 +162,12 @@ header nav a:hover {
     padding: 1rem;
   }
 }
+header nav a:last-child {
+  border: 2px solid #34CC5C;
+  border-radius: 0.6rem;
+  padding: 1rem 1.8rem;
+  box-shadow: 0 1px 2px 0 #29E05B;
+}
 @media (max-width: 1310px) {
   header nav {
     width: 50%;
@@ -191,7 +197,7 @@ header nav a:hover {
   }
 }
 section.cta {
-  background-image: url(../images/hero-large.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../images/hero-large.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: 90vh;
@@ -205,8 +211,12 @@ section.cta .cta-container {
   align-items: center;
 }
 section.cta .cta-container h1 {
-  font-size: 7rem;
-  color: #050404;
+  font-size: 6.5rem;
+  color: #ECFFF1;
+  font-family: 'Mada', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 2px 2px #050404;
 }
 @media (max-width: 1270px) {
   section.cta .cta-container h1 {
@@ -241,12 +251,12 @@ section.cta .cta-container .btn-container .btn {
   color: #34CC5C;
   border: 2px solid #29E05B;
   text-align: center;
+  box-shadow: 0 1px 2px 0 #29E05B;
 }
-section.cta .cta-container .btn-container .btn a:hover {
-  color: #29E05B;
-}
-section.cta .cta-container .btn-container .btn:hover {
+section.cta .cta-container .btn-container .btn:hover a {
   border-color: #34CC5C;
+  color: #29E05B;
+  text-shadow: 1px 0px #29E05B;
 }
 @media (max-width: 800px) {
   section.cta .cta-container .btn-container .btn {
