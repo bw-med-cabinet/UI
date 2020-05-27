@@ -191,7 +191,7 @@ header nav a:hover {
   }
 }
 section.cta {
-  background-image: url(../images/hero-large.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../images/hero-large.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: 90vh;
@@ -205,8 +205,11 @@ section.cta .cta-container {
   align-items: center;
 }
 section.cta .cta-container h1 {
-  font-size: 7rem;
-  color: #050404;
+  font-size: 6.5rem;
+  color: #ECFFF1;
+  font-family: 'Mada', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 @media (max-width: 1270px) {
   section.cta .cta-container h1 {
