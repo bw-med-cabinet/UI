@@ -16,6 +16,7 @@ section.cta{
             font-family: @cta-font;
             text-transform: uppercase;
             font-weight: bold;
+            text-shadow: 2px 2px @richblack;
 
             @media (max-width: 1270px){
                 font-size: 5rem;
@@ -37,14 +38,10 @@ section.cta{
             .btn {
                 .custom-btn(25%, 3rem);
 
-                a {
-                    &:hover {
-                        color: @border-color;
-                    }
-                }
-
-                &:hover {
+                &:hover a{
                     border-color: @main-font-color;
+                    color: @border-color;
+                    text-shadow: 1px 0px @border-color;
                 }
 
                 @media @tablet {
