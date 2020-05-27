@@ -162,6 +162,12 @@ header nav a:hover {
     padding: 1rem;
   }
 }
+header nav a:last-child {
+  border: 2px solid #34CC5C;
+  border-radius: 0.6rem;
+  padding: 1rem 1.8rem;
+  box-shadow: 0 1px 2px 0 #29E05B;
+}
 @media (max-width: 1310px) {
   header nav {
     width: 50%;
