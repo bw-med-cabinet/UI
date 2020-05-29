@@ -216,7 +216,7 @@ section.cta .cta-container h1 {
   font-family: 'Mada', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 2px 2px #050404;
+  -webkit-text-stroke: 1px black;
 }
 @media (max-width: 1270px) {
   section.cta .cta-container h1 {
