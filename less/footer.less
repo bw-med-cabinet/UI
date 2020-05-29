@@ -3,6 +3,8 @@ footer {
     background-color: @header-bg;
     padding: 3rem;
     border-top: 2px solid @main-font-color;
+    border-left: 2px solid @main-font-color;
+    border-right: 2px solid @main-font-color;
 
     a.logo {
         width: 10%;
@@ -23,5 +25,10 @@ footer {
 
     @media @mobile {
         flex-direction: column;
+    }
+
+    @media (max-width: 2000px) {
+        border-left: none;
+        border-right: none;
     }
 }

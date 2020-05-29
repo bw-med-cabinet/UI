@@ -205,6 +205,8 @@ footer {
   background-color: #FFFBFE;
   padding: 3rem;
   border-top: 2px solid #34CC5C;
+  border-left: 2px solid #34CC5C;
+  border-right: 2px solid #34CC5C;
 }
 footer a.logo {
   width: 10%;
@@ -226,6 +228,12 @@ footer a {
 @media (max-width: 500px) {
   footer {
     flex-direction: column;
+  }
+}
+@media (max-width: 2000px) {
+  footer {
+    border-left: none;
+    border-right: none;
   }
 }
 section.contact-form {
